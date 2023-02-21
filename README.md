@@ -11,7 +11,7 @@
 - [x] task güncelleme
 - [x] tarihi ve saati gösterme
 - [x] responsive tasarım
-- [ ] github page ile yayınlama
+- [x] github page ile yayınlama
 - [ ] task pasif yapma
 - [x] taskları localstorage ya da json serverda tutma
 
@@ -28,7 +28,7 @@
 
 ### Proje Adresi
 
-[x](x
+[todo](https://dogruvolkan.github.io/todo/)
 
 ### Projenin Görselleri:
 

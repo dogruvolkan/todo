@@ -89,7 +89,7 @@ body {
 }
 
 .text-line {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .card-show .todo-btns {
@@ -135,6 +135,22 @@ body {
 
     .card-show .todo-text {
         width: 60%;
+    }
+
+    .card-add input {
+        width: 80%;
+    }
+
+    .card-add button {
+        width: 20%;
+        height: 46px;
+        display: inline;
+        border: 1px solid #3c444d;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #343A40;
+        color: #F5F5F5;
     }
 
 }

@@ -5,10 +5,13 @@ export const TodoContext = createContext();
 export const TodoContextProvider = ({ children }) => {
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
-  const [showUpdate, setShowUpdate] = useState(false);
+  const [showTodo, setShowTodo] = useState(false);
+
 
   return (
-    <TodoContext.Provider value={{ todos, setTodos, value, setValue,showUpdate, setShowUpdate }}>
+    <TodoContext.Provider
+      value={{ todos, setTodos, value, setValue, showTodo, setShowTodo }}
+    >
       {children}
     </TodoContext.Provider>
   );

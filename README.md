@@ -11,6 +11,7 @@
 - [ ] task güncelleme
 - [ ] tarihi ve saati gösterme
 - [ ] task pasif yapma
+- [ ] taskları localstorage ya da json serverda tutma
 - [ ] responsive tasarım
 
 ### Projede kullanılan Teknolojiler ve Metotlar :
@@ -25,7 +26,7 @@ gh-pages kullanıldı.
 
 ### Proje Adresi
 
-[random-number](https://dogruvolkan.github.io/random-number)
+[x](x
 
 ### Projenin Görselleri:
 

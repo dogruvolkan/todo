@@ -9,7 +9,7 @@
 - [x] task ekleme
 - [x] task silme
 - [ ] task güncelleme
-- [ ] tarihi ve saati gösterme
+- [x] tarihi ve saati gösterme
 - [ ] task pasif yapma
 - [ ] taskları localstorage ya da json serverda tutma
 - [ ] responsive tasarım

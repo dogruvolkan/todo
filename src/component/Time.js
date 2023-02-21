@@ -1,12 +1,38 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 const Time = () => {
-  return (
-    <div className='time'>
-        <div><h1>Thursday</h1></div>
-        <div><h5>March , 23, 2023</h5></div>
-    </div>
-  )
-}
+  const [time, setTime] = useState(new Date());
 
-export default Time
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  var dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  return (
+    <div className="time">
+      <div className="saat">
+        <p>{time.toLocaleTimeString()}</p>
+      </div>
+      <div className="gun">
+        <h1>{dayNames[time.getDay()]}</h1>
+      </div>
+      <div>
+        <h3>{time.toLocaleDateString()}</h3>
+      </div>
+    </div>
+  );
+};
+
+export default Time;

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { TodoContextProvider } from "./context/TodoContext";
+import AddTodo from "./component/AddTodo";
+import ShowTodo from "./component/ShowTodo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TodoContextProvider>
+        <div className="card-todo">
+          <AddTodo />
+          <ShowTodo />
+        </div>
+      </TodoContextProvider>
     </div>
   );
 }

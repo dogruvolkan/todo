@@ -8,18 +8,20 @@
 
 - [x] task ekleme
 - [x] task silme
-- [ ] task güncelleme
+- [x] task güncelleme
 - [x] tarihi ve saati gösterme
+- [x] responsive tasarım
+- [ ] github page ile yayınlama
 - [ ] task pasif yapma
-- [ ] taskları localstorage ya da json serverda tutma
-- [ ] responsive tasarım
+- [x] taskları localstorage ya da json serverda tutma
 
 ### Projede kullanılan Teknolojiler ve Metotlar :
 
 > Projede useState hook kullanıldı. stilendirme için herhangi bir kütüphane kullanılmadı pure css ile stilendirme yapıldı.
-gh-pages kullanıldı.
+> gh-pages kullanıldı.
 
 ### proje font ve renk:
+
 (#20262E)
 (#913175)
 (#E9E8E8)

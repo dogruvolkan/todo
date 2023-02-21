@@ -1,17 +1,23 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { TodoContext } from "../context/TodoContext";
 
 const AddTodo = () => {
-  const { todos, setTodos, value, setValue, showTodo, setShowTodo } =
-    useContext(TodoContext);
+  const { todos, setTodos, value, setValue } = useContext(TodoContext);
+
+  useEffect(() => {
+    const storedTodos = localStorage.getItem("todos");
+    if (storedTodos) {
+      setTodos(JSON.parse(storedTodos));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const handleChange = (e) => {
     setValue(e.target.value);
   };
-
-  if(value){
-    setShowTodo(true);
-  }
 
   const todoAdd = (e) => {
     e.preventDefault();
@@ -20,14 +26,18 @@ const AddTodo = () => {
       setTodos(newTodos);
       setValue("");
     } else {
-      window.alert("deger gir lan köpek");
+      window.alert("pardon değer girer misiniz ?");
     }
   };
 
   return (
     <div className="card-add">
       <form>
-        <input value={value} onChange={handleChange} placeholder="Add a task..." />
+        <input
+          value={value}
+          onChange={handleChange}
+          placeholder="Add a task..."
+        />
         <button onClick={todoAdd}>Add</button>
       </form>
     </div>

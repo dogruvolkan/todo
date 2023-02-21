@@ -23,6 +23,7 @@ const Time = () => {
   return (
     <div className="time">
       <div className="saat">
+        <p style={{textAlign:"center" , paddingBottom:5}}>B❤️V</p>
         <p>{time.toLocaleTimeString()}</p>
       </div>
       <div className="gun">

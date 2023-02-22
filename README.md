@@ -12,19 +12,23 @@
 - [x] tarihi ve saati gösterme
 - [x] responsive tasarım
 - [x] github page ile yayınlama
-- [ ] task pasif yapma
+- [x] task pasif yapma
 - [x] taskları localstorage ya da json serverda tutma
 
 ### Projede kullanılan Teknolojiler ve Metotlar :
 
-> Projede useState hook kullanıldı. stilendirme için herhangi bir kütüphane kullanılmadı pure css ile stilendirme yapıldı.
+> Projede useState, useEffect hook kullanıldı.
+> stilendirme için herhangi bir kütüphane kullanılmadı pure css ile stilendirme yapıldı.
 > gh-pages kullanıldı.
+> context api kullanıldı.
 
 ### proje font ve renk:
 
-(#20262E)
-(#913175)
-(#E9E8E8)
+(font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+sans-serif;)
+(body background-color: #f06292;)
+(card background-color: #3c424a;)
+(genel color: #f5f5f5;)
 
 ### Proje Adresi
 
@@ -32,5 +36,5 @@
 
 ### Projenin Görselleri:
 
-![ekran görüntüsü]()
-![ekran görüntüsü]()
+![ekran görüntüsü](src/mobile.png)
+![ekran görüntüsü](src/desktop.gif)

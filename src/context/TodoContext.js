@@ -6,7 +6,6 @@ export const TodoContextProvider = ({ children }) => {
   const [value, setValue] = useState("");
   const [todos, setTodos] = useState([]);
   const [showTodo, setShowTodo] = useState(false);
-  const [isactive, setIsActive] = useState(false);
 
   return (
     <TodoContext.Provider
@@ -16,9 +15,7 @@ export const TodoContextProvider = ({ children }) => {
         value,
         setValue,
         showTodo,
-        setShowTodo,
-        isactive,
-        setIsActive,
+        setShowTodo
       }}
     >
       {children}

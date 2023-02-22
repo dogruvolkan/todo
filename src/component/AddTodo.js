@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { TodoContext } from "../context/TodoContext";
 
 const AddTodo = () => {
+  
   const { todos, setTodos, value, setValue } = useContext(TodoContext);
 
   useEffect(() => {

@@ -2,15 +2,8 @@ import React, { useContext } from "react";
 import { TodoContext } from "../context/TodoContext";
 
 const ShowTodo = () => {
-  const {
-    todos,
-    setTodos,
-    showTodo,
-    setValue,
-    setShowTodo,
-    isactive,
-    setIsActive,
-  } = useContext(TodoContext);
+  const { todos, setTodos, showTodo, setValue, setShowTodo } =
+    useContext(TodoContext);
 
   const deleteTodo = (index) => {
     const newTodos = [...todos];
@@ -32,7 +25,7 @@ const ShowTodo = () => {
   };
 
   const handleActive = (event) => {
-    event.currentTarget.classList.toggle("text-line ");
+    event.currentTarget.classList.toggle("text-line");
   };
 
   return (
